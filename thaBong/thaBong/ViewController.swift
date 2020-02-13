@@ -14,29 +14,32 @@ class ViewController: UIViewController {
     let widthScreen = UIScreen.main.bounds.width
     let heightScreen = UIScreen.main.bounds.height
     var timer: Timer!
+    var yBanDau: CGFloat = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-//                set vị trí bóng
-        quaBongImage.center.x = view.center.x
-        quaBongImage.frame = CGRect(x: widthScreen/2 - 50, y: 50, width: 100, height: 100)
 
-        UIView.animate(withDuration: 4){
-            self.quaBongImage.frame = CGRect(x: self.widthScreen/2 - 50, y: self.heightScreen - 100, width: 100, height: 100)
-
-        }
+        yBanDau = quaBongImage.frame.origin.y
+        chuyenDong2()
 
         
-//        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(runLoop), userInfo: nil, repeats: true)
-//        
+
     }
     
-//    @objc func runLoop(){
-//        self.quaBongImage.center.y += heightScreen/6
+//    func chuyenDong1(){
+//        UIView.animate(withDuration: 1){
+//            self.quaBongImage.frame.origin.y += self.view.frame.maxY - self.quaBongImage.frame.height*2 - 20
+//        }
 //    }
-    
-    
-}
 
+    
+    func chuyenDong2(){
+        UIView.animate(withDuration: 1, animations: {
+                                                    self.quaBongImage.frame.origin.y += self.view.frame.maxY - self.quaBongImage.frame.height*2 - 20})
+        { (_) in
+            UIView.animate(withDuration: 1){
+                self.quaBongImage.frame.origin.y -= self.view.frame.maxY - self.yBanDau - self.quaBongImage.frame.height*2
+            }
+        }
+    }
+}

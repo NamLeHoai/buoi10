@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D322B6223F4F32200B2AB0F /* nayCheoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D322B6123F4F32200B2AB0F /* nayCheoViewController.swift */; };
 		3D3B437123EDC15900E497FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B437023EDC15900E497FA /* AppDelegate.swift */; };
 		3D3B437323EDC15900E497FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B437223EDC15900E497FA /* SceneDelegate.swift */; };
 		3D3B437523EDC15900E497FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B437423EDC15900E497FA /* ViewController.swift */; };
 		3D3B437823EDC15900E497FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B437623EDC15900E497FA /* Main.storyboard */; };
 		3D3B437A23EDC15B00E497FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B437923EDC15B00E497FA /* Assets.xcassets */; };
 		3D3B437D23EDC15B00E497FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3B437B23EDC15B00E497FA /* LaunchScreen.storyboard */; };
+		3D868EC423F43D9700991C7B /* TetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D868EC323F43D9700991C7B /* TetsViewController.swift */; };
+		3DE3696523F298E1003E05F1 /* ballViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE3696423F298E1003E05F1 /* ballViewController.swift */; };
+		3DE3696723F2A5EC003E05F1 /* angleBallController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE3696623F2A5EC003E05F1 /* angleBallController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D322B6123F4F32200B2AB0F /* nayCheoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nayCheoViewController.swift; sourceTree = "<group>"; };
 		3D3B436D23EDC15900E497FA /* thaBong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thaBong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3B437023EDC15900E497FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D3B437223EDC15900E497FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		3D3B437923EDC15B00E497FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D3B437C23EDC15B00E497FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D3B437E23EDC15B00E497FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D868EC323F43D9700991C7B /* TetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetsViewController.swift; sourceTree = "<group>"; };
+		3DE3696423F298E1003E05F1 /* ballViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ballViewController.swift; sourceTree = "<group>"; };
+		3DE3696623F2A5EC003E05F1 /* angleBallController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = angleBallController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				3D3B437923EDC15B00E497FA /* Assets.xcassets */,
 				3D3B437B23EDC15B00E497FA /* LaunchScreen.storyboard */,
 				3D3B437E23EDC15B00E497FA /* Info.plist */,
+				3DE3696423F298E1003E05F1 /* ballViewController.swift */,
+				3DE3696623F2A5EC003E05F1 /* angleBallController.swift */,
+				3D868EC323F43D9700991C7B /* TetsViewController.swift */,
+				3D322B6123F4F32200B2AB0F /* nayCheoViewController.swift */,
 			);
 			path = thaBong;
 			sourceTree = "<group>";
@@ -138,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE3696723F2A5EC003E05F1 /* angleBallController.swift in Sources */,
 				3D3B437523EDC15900E497FA /* ViewController.swift in Sources */,
+				3DE3696523F298E1003E05F1 /* ballViewController.swift in Sources */,
 				3D3B437123EDC15900E497FA /* AppDelegate.swift in Sources */,
+				3D322B6223F4F32200B2AB0F /* nayCheoViewController.swift in Sources */,
+				3D868EC423F43D9700991C7B /* TetsViewController.swift in Sources */,
 				3D3B437323EDC15900E497FA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
